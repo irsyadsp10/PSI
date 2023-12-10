@@ -1,0 +1,9 @@
+<!-- res/values/themes.xml -->
+
+<resources>
+
+    <style name="Theme.CarCare2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Other theme attributes -->
+    </style>
+
+</resources>

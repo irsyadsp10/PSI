@@ -1,0 +1,47 @@
+<!-- activity_voucher_list.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat"> <!-- Tambahkan atribut theme di sini -->
+
+    <!-- Header "Voucher" dengan tombol "Back" -->
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00A58E"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00A58E"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:title="Pilih Voucher"
+            android:titleTextColor="#FFFFFF" /> <!-- Ubah warna teks menjadi putih -->
+
+    </RelativeLayout>
+
+    <!-- Daftar Voucher -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewVouchers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutHeader"
+        android:padding="16dp"/>
+
+    <!-- Tombol "Pilih" di bagian bawah -->
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih"
+        android:background="#00A58E"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:enabled="false"/>
+</RelativeLayout>

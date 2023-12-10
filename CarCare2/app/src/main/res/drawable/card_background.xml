@@ -1,0 +1,21 @@
+<!-- card_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape>
+            <corners android:radius="8dp" />
+            <solid android:color="#00FF00" /> <!-- Warna latar belakang saat dipilih -->
+            <stroke
+                android:width="1dp"
+                android:color="#00FF00" /> <!-- Warna garis tepi saat dipilih -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="8dp" />
+            <solid android:color="#FFFFFF" />
+            <stroke
+                android:width="1dp"
+                android:color="#CCCCCC" />
+        </shape>
+    </item>
+</selector>

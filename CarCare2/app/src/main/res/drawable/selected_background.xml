@@ -1,0 +1,10 @@
+<!-- res/drawable/selected_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/selectedColor" />
+            <!-- Atur atribut border jika diperlukan -->
+            <!-- <stroke android:width="2dp" android:color="@color/borderColor" /> -->
+        </shape>
+    </item>
+</selector>
